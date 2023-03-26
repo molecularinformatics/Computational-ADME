@@ -840,8 +840,8 @@ param_search_LGB = {'n_estimators': [100, 250, 500, 750, 1000],
 
 
 # set up Lasso parameters (10)
-param_base_Lasso = {'alpha': 1}
-param_search_Lasso = {'alpha':[0.01, 0.05, 0.1, 0.2,0.3,0.4, 0.5]}  #
+param_base_Lasso = {'alpha': 0.1}
+param_search_Lasso = {'alpha':[0.001,0.005, 0.01, 0.05, 0.1, 0.5, 1, 2, 5]}  #
 
 
 

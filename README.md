@@ -25,7 +25,9 @@ The file "ADME_public_set_3521.csv" contains the compound Smiles, vendor and ven
 ### Machine Learning Models (including Random Forest, SVM, XGBoost, LightGBM, Lasso)
 
 The folder "ML" contains individual endpoint sdf files and the code "ADME_ML_public.py" for training and validating all Machine learning models investigated in the paper.
+
 Take a LightGBM model trained on HLM dataset as an example. 
+
 To train a model, you need to run:
 ```
 python ADME_ML_public.py ADME_HLM.sdf -p 'LOG HLM_CLint (mL/min/kg)' -d FCFP4_rdMolDes -m LightGBM -w build 
@@ -43,7 +45,9 @@ python ADME_ML_public.py ADME_HLM.sdf -p 'LOG HLM_CLint (mL/min/kg)' -d FCFP4_rd
 
 ### MPNN Models 
 The folder "MPNN" contains individual training and test set CSV files and the code "MPNN_public.py" for training and validating message-passing neural network models investigated in the paper.
+
 Take training MPNN models on HLM dataset as an example. 
+
 To train and validate MPNN models with default hyperparameters, you need to run:
 ```
 python MPNN_public.py ADME_HLM_train.csv ADME_HLM_test.csv default
@@ -60,7 +64,9 @@ Two models with either the representation of molecular graph alone (MPNN1) or th
 ### FCNN Models 
 
 The folder "FCNN" contains individual training and test set CSV files with precalculated features and the code "FCNN_public.py" for training and validating all fully-connected neural network models investigated in the paper.
+
 Take training FCNN models on HLM dataset as an example. 
+
 To train and validate all FCNN models, you need to run:
 ```
 python FCNN_public.py ADME_HLM_train_feat.csv ADME_HLM_test_feat.csv
